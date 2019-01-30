@@ -1,0 +1,22 @@
+{
+  "name": "react-demo-multi",
+  "version": "1.0.0",
+  "description": "react-demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yzzx0810/react-demo-multi.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "xinzhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yzzx0810/react-demo-multi/issues"
+  },
+  "homepage": "https://github.com/yzzx0810/react-demo-multi#readme"
+}
