@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function Test() {
-    return (
-            <h1>Hello React!</h1>
-    );
-}
-
-ReactDOM.render(<Test/>, document.getElementById('root'));
+let arr = [
+    <h1>Hello world!</h1>,
+    <h2>React is awesome</h2>,
+];
+ReactDOM.render(
+    <div>{arr}</div>,
+    document.getElementById('root')
+);
 
 // export default Test;
