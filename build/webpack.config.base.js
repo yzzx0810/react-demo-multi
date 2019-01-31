@@ -23,12 +23,25 @@ module.exports = {
         rules: [
             {
                 test: /\.js|jsx$/,
-                use: ['babel-loader'],
-                exclude: /node_modules/
+                loader: "eslint-loader",
+                enforce: "pre",//强制预加载检查资源文件
+                exclude: /node_modules/,
+                options: {
+                    fix: false,//是否自动修改不符合eslint规则的目标文件（小心使用）
+                    cache: false,//是否缓存检查结果。该选项有助于对全局编译减少eslint校验时间
+                    formatter: require("eslint-friendly-formatter"),//eslint结果输出的格式化
+                    emitError: true,//加载程序根据eslint错误是否自动调整错误报告
+                    emitWarning: false,//加载程序根据eslint警告是否自动调整错误报告
+                    quiet: true,//加载程序是否只处理和报告错误而忽略警告
+                    failOnWarning: false,//是否因任何eslint警告而阻断模块编译
+                    failOnError: true,//是否因任何eslint错误而阻断模块编译
+                    outputReport: false,//是否将eslint校验错误写入文件
+                }
             },
             {
-                test: /\.vue$/,
-                loader: ['vue-loader']
+                test: /\.js|jsx$/,
+                use: ['babel-loader'],
+                exclude: /node_modules/
             },
             {
                 test: /\.css/,
