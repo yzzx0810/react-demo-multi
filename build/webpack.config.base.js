@@ -14,7 +14,7 @@ module.exports = {
         publicPath: "./"//引入资源文件的前缀公共路径
     },
     resolve: {
-        extensions: ['.js', '.vue', '.json', '.css', '.scss'],
+        extensions: ['.js', 'jsx', '.json', '.css', '.scss'],
         alias: {
             "@": path.join(__dirname, "..", "src")
         }
