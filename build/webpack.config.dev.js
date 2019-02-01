@@ -23,13 +23,13 @@ const webpackConfig = merge(baseWebpackConfig, {
         hot: true,//热替换加载
         host: "localhost",//域名
         port: 8080,//端口号
-        open: true,//server启动后是否自动打开浏览器
+        open: false,//server启动后是否自动打开浏览器
         overlay: {//用来在编译出错的时候，在浏览器页面上显示错误
             warnings: false,
             errors: true
         },
         publicPath: "/",//此路径下的打包文件可在浏览器中访问
-        quiet: true,//启用 quiet 后，除了初始启动信息之外的任何内容都不会被打印到控制台。意味着来自 webpack 的错误或警告在控制台不可见。
+        quiet: false,//启用 quiet 后，除了初始启动信息之外的任何内容都不会被打印到控制台。意味着来自 webpack 的错误或警告在控制台不可见。
         watchOptions: {//监听文件变化，当它们修改后会重新编译。
             aggregateTimeout: 500,//当第一个文件更改，会在重新构建前增加延迟。以毫秒为单位
             poll: false,//是否开启轮询，如果开启则设置定时间隔时间
