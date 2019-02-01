@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-let arr = [
+const content = [
     <h1>Hello world!</h1>,
     <h2>React is awesome</h2>,
 ];
 ReactDOM.render(
-    <div>{arr}</div>,
+    <div>{content}</div>,
     document.getElementById('root')
 );
 
