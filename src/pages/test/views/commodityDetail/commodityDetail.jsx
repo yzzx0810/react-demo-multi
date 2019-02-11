@@ -1,18 +1,17 @@
 import React from 'react';
 
-class Home extends React.Component {
+class CommodityDetail extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            value: "123123"
+            value: "456456"
         }
     }
 
     render() {
         return (
             <div>
-                <p>Hello, Welcome React...</p>
                 <span>{this.state.value}</span>
             </div>
 
@@ -20,4 +19,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home
+export default CommodityDetail
