@@ -48,7 +48,7 @@ module.exports = {
                 use: ExtractTextPluginCss.extract({
                     use: [
                         {
-                            loader: "css-loader",
+                            loader: "css-loader?modules",
                             // options: {importLoaders: 1}//1代表css-loader后还需要几个loader
                         },
                         {
@@ -70,7 +70,7 @@ module.exports = {
                 use: ExtractTextPluginScss.extract({
                     use: [
                         {
-                            loader: "css-loader",
+                            loader: "css-loader?modules",
                             // options: {importLoaders: 1}
                         },
                         {
@@ -95,7 +95,7 @@ module.exports = {
                 use: ExtractTextPluginLess.extract({
                     use: [
                         {
-                            loader: "css-loader",
+                            loader: "css-loader?modules",
                             // options: {importLoaders: 2}
                         },
                         {

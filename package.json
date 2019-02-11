@@ -44,6 +44,10 @@
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "prop-types": "^15.7.1",
+    "px2rem-loader": "^0.1.9",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.29.0",
@@ -53,6 +57,10 @@
   },
   "dependencies": {
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1"
   }
 }
