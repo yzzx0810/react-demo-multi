@@ -5,12 +5,12 @@ import {Provider} from 'react-redux';
 import store from '../../store/test';
 
 import Home from './views/home/home.jsx';
-import CounterContainer from '../../containers/CounterContainer.js';
+import App from './views/app/app.jsx';
 
 
 ReactDOM.render(
     <Provider store={store}>
-        <Home/>
+        <App/>
     </Provider>,
     document.getElementById('root')
 );

@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './scss/home.scss'
 import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
 
-import CommodityDetail from '../commodityDetail/commodityDetail.jsx';
 import CounterContainer from '../../../../containers/CounterContainer.js';
 
 class Home extends React.Component {
@@ -18,17 +17,10 @@ class Home extends React.Component {
         return (
             <div>
                 <CounterContainer/>
+                <Link to="/login">Go to login</Link>
                 <div className={styles.main}>Hello, Welcome React...</div>
                 <div style={{backgroundColor: "red", width: "400px"}}>Hello, Welcome React...</div>
                 <span>{this.state.value}</span>
-                <Router>
-                    <div>
-                        <Link to="/commodityDetail">Go to CommodityDetail</Link>
-                        <Switch>
-                            <Route path="/commodityDetail" component={CommodityDetail}/>
-                        </Switch>
-                    </div>
-                </Router>
             </div>
 
         );
