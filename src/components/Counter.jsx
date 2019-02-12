@@ -14,7 +14,9 @@ class Counter extends React.Component {
     }
 }
 
-Counter.prototype = {
-    value: PropTypes.number.isRequired,
-    onIncreaseClick: PropTypes.func.isRequired
-};
+// Counter.prototype = {
+//     value: PropTypes.number.isRequired,
+//     onIncreaseClick: PropTypes.func.isRequired
+// };
+
+export default Counter
