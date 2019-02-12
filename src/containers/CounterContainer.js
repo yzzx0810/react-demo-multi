@@ -16,6 +16,12 @@ const mapDispatchToProps = (dispatch) => {
                 type: ActionTypes.ADD_COUNT,
                 num: 2
             })
+        },
+        onDecreaseClick: () => {
+            dispatch({
+                type: ActionTypes.SUB_COUNT,
+                num: 1
+            })
         }
 
     }

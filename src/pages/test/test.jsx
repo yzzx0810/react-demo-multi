@@ -10,7 +10,7 @@ import CounterContainer from '../../containers/CounterContainer.js';
 
 ReactDOM.render(
     <Provider store={store}>
-        <CounterContainer/>
+        <Home/>
     </Provider>,
     document.getElementById('root')
 );

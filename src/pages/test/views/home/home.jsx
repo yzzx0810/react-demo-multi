@@ -3,6 +3,7 @@ import styles from './scss/home.scss'
 import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
 
 import CommodityDetail from '../commodityDetail/commodityDetail.jsx';
+import CounterContainer from '../../../../containers/CounterContainer.js';
 
 class Home extends React.Component {
 
@@ -16,6 +17,7 @@ class Home extends React.Component {
     render() {
         return (
             <div>
+                <CounterContainer/>
                 <div className={styles.main}>Hello, Welcome React...</div>
                 <div style={{backgroundColor: "red", width: "400px"}}>Hello, Welcome React...</div>
                 <span>{this.state.value}</span>
